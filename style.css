@@ -91,10 +91,10 @@ form .email {
     display: flex;
 }
 
-form .email:hover {
+/* form .email:hover {
     background-color: var(--title-color); 
     transition: 1s;
-}
+} */
 
 #inputEmail {
     width: 748px;
@@ -104,6 +104,17 @@ form .email:hover {
 
 .email img {
     margin: 12px;
+}
+
+.sendImage {
+    margin: solid 1px red;
+    background-color: var(--bg-button-color);
+    transition: 1s;
+}
+
+.sendImage:hover {
+    background-color: var(--title-color); 
+    transition: 1s;
 }
 
 
