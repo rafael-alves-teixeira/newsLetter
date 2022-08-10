@@ -16,8 +16,7 @@
 
 body {
     height: 100vh; 
-    /* width: 100vw; */
-    background-color: #000000;
+    width: 100vw;
     display: grid;
     grid-template-areas: "main aside";
     grid-template-columns: 1fr 1fr;
@@ -25,10 +24,16 @@ body {
 
 main {
     grid-area: main;
+    background-color: var(--body-bg-color);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
 }
 
 aside {
     grid-area: aside;
+    background-image: url("./assets/read_news.jpg");
+    background-size: cover;
+    background-position: right center;
 }
 
 .logo {
@@ -47,73 +52,81 @@ aside {
     margin-left: 36px;
     margin-top: 236px;
     width: 647px;
+    height: 102px;
 
 }
 
 .textContainer h2 {
+    font-family: Work Sans, sans-serif;
+    font-size: 24px;
     color: var(--title-color);
-    
+}
+
+.textContainer strong {
+    display: block;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
     position: absolute;
     z-index: 1;
     width: 798px;
     height: 84px;
-    top: 388px;
+    margin-top: 388px;
     margin-left: 36px;
-    /* margin-top: 49.56px; */
     color: var(--form-color);
-    /* display: flex; */
     
 }
 
+.form label {
+    font-style: bold;
+    color: #A8A8A8;
+}
+
 form .email {
-   background-color: var(--bg-button-color);
-   border-left: solid 5px #04D361;
-    display: inline;
-    /* flex-direction: row; */
+    background-color: var(--bg-button-color);
+    border-left: solid 5px #04D361;
+    margin-top: 14px;
+    display: flex;
 }
 
-.email {
-   margin-top: 14px;
-   /* justify-content: center;
-   justify-items: center;
-   align-items: center; */
+form .email:hover {
+    background-color: var(--title-color); 
+    transition: 1s;
 }
-
 
 #inputEmail {
     width: 748px;
     height: 50px;
+    padding-left: 15px;
 }
 
 .email img {
-    /* margin-top: 15px; */
+    margin: 12px;
 }
 
+
 nav a {
-    position: absolute;
-    left: 36px;
-    top: 522px;
+    margin-left: 36px;
     text-decoration: none;
     color:inherit;
     color: var(--bg-button-color);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    font-style: bold;
     
 }
 
 nav a:hover {
     color: var(--title-color);
+    transition: 1s;
 }
 
-.aside img {
-    width: 100%;
-    height: 100%;
-    
-    /* width: 1175px;
-    height: 900px;
-    left: 376px;
-    top: 0px; */
+nav img {
+    margin-left: 0px;
+    margin-top: 522px;
+    margin-bottom: 0;
+    width: 16px;
+    height: 16px;
 }
