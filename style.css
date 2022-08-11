@@ -85,7 +85,7 @@ aside {
 }
 
 form .email {
-    background-color: var(--bg-button-color);
+    background-color: var(--text-color);
     border-left: solid 5px #04D361;
     margin-top: 14px;
     display: flex;
@@ -177,6 +177,6 @@ nav {
     }
 
     nav {
-        margin-top: 22px;
+        margin-top: 545px;
     }
 }
