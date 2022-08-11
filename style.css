@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    grid-area: main;
+    grid-area:"main";
     background-color: var(--body-bg-color);
     font-family: 'League Spartan', sans-serif;
     font-size: 14px;
@@ -91,11 +91,6 @@ form .email {
     display: flex;
 }
 
-/* form .email:hover {
-    background-color: var(--title-color); 
-    transition: 1s;
-} */
-
 #inputEmail {
     width: 748px;
     height: 50px;
@@ -118,6 +113,7 @@ form .email {
 }
 
 
+
 nav a {
     margin-left: 36px;
     text-decoration: none;
@@ -134,10 +130,53 @@ nav a:hover {
     transition: 1s;
 }
 
-nav img {
-    margin-left: 0px;
+nav {
     margin-top: 522px;
-    margin-bottom: 0;
-    width: 16px;
-    height: 16px;
+}
+
+@media (max-width: 500px){
+    body {
+        height: 100vh; 
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "main";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        width: 300px;
+        height: 94px;
+    }
+
+    .textContainer {
+        /* margin-top: 236px; */
+        margin-top: 200px;
+        width: 300px;
+        height: 102px;
+    }
+    .form {
+        width: 300px;
+        height: 84px;
+        /* margin-top: 388px; */
+        margin-top: 440px;
+        margin-left: 36px;      
+    }
+
+    .textContainer strong {
+        /* margin-top: 9px;
+        margin-bottom: 9px; */
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #inputEmail {
+        width: 300px;
+        height: 50px;
+        padding-left: 15px;
+    }
+
+    nav {
+        margin-top: 22px;
+    }
 }
